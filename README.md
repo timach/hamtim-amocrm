@@ -5,6 +5,6 @@ https://developers.amocrm.ru/rest_api/
 <b>Как работать с библиотекой (по шагам)</b>
 
 1) Подключаем с помощью require или include
-2) Создаем объект с параметрами авторизации$amo = new HamtimAmocrm('test@email.com'/*логин*/, 'API'/*api ключ*/, 'SUBDOMAIN'/*субдомен*/);
-3) Авторизуемся if(!$amo->auth) die('Нет соединения с amoCRM');
+2) Создаем объект с параметрами авторизации <pre>$amo = new HamtimAmocrm('test@email.com'/*логин*/, 'API'/*api ключ*/, 'SUBDOMAIN'/*субдомен*/);</pre>
+3) Авторизуемся <pre>if(!$amo->auth) die('Нет соединения с amoCRM');</pre>
 4) Делаем запросы к aпи амоцрм
