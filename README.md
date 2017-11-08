@@ -8,3 +8,5 @@ https://developers.amocrm.ru/rest_api/
 2) Создаем объект с параметрами авторизации <pre>$amo = new HamtimAmocrm('test@email.com'/*логин*/, 'API'/*api ключ*/, 'SUBDOMAIN'/*субдомен*/);</pre>
 3) Авторизуемся <pre>if(!$amo->auth) die('Нет соединения с amoCRM');</pre>
 4) Делаем запросы к aпи амоцрм
+
+Страница библиотеки на сайте разработчика http://hamtim.ru/2017/11/07/hamtim-amocrm/
