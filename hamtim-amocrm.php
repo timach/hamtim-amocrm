@@ -3,6 +3,7 @@
 /*
 СуперЛегкий класс (библиотека) для работы с api AmoCRM
 http://hamtim.ru/2017/11/07/hamtim-amocrm/
+Версия от 2017-11-10
 */
 
 if (!class_exists('HamtimAmocrm')) {
@@ -64,14 +65,14 @@ if (!class_exists('HamtimAmocrm')) {
 			return $out;
 		}
 		
-		function q($path, $fields, $ifModifiedSince=false)
+		function q($path, $fields=array(), $ifModifiedSince=false)
 		{
 			return $this->amocrm_query($path, $fields, $ifModifiedSince);
 		}
 		
 		function l($l){ echo '<pre>'; var_dump($l); echo '</pre>'; }
 		
-		function amocrm_query($path, $fields, $ifModifiedSince=false)
+		function amocrm_query($path, $fields=array(), $ifModifiedSince=false)
 		{
 			$link='https://'.$this->subdomain.'.amocrm.ru'.$path;
 
