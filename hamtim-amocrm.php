@@ -48,7 +48,7 @@ if (!class_exists('HamtimAmocrm')) {
 			curl_setopt($curl,CURLOPT_USERAGENT,'amoCRM-API-client/1.0');
 			curl_setopt($curl,CURLOPT_URL,$link);
 			curl_setopt($curl,CURLOPT_POST,true);
-			curl_setopt($curl,CURLOPT_POSTFIELDS,http_build_query($user));
+			curl_setopt($curl,CURLOPT_POSTFIELDS,http_build_query($user,null,'&',PHP_QUERY_RFC1738));
 			curl_setopt($curl,CURLOPT_HEADER,false);
 			curl_setopt($curl,CURLOPT_COOKIEFILE,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6 dirname(__FILE__) -> __DIR__
 			curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6 dirname(__FILE__) -> __DIR__
