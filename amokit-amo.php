@@ -59,7 +59,6 @@ if (!class_exists('AmokitAmocrm')) {
 
     function q($path, $fields=array(), $ifModifiedSince='')
     {
-      if($params) $params = '&'.$params;
       $link='https://'.$this->domain.$path;
       $curl=curl_init();
       curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
